@@ -21,8 +21,11 @@ public class Sale {
      private Double amount;
      private LocalDate date;
 
+     public Sale() {
+ 	 }
 
     public Sale(Long id, String sellerName, Integer visited, Integer deals, Double amount, LocalDate date) {
+    	super();
         this.id = id;
         this.sellerName = sellerName;
         this.visited = visited;
@@ -30,8 +33,6 @@ public class Sale {
         this.amount = amount;
         this.date = date;
     }
-
-
 
     public Long getId() {
         return this.id;
@@ -79,7 +80,6 @@ public class Sale {
 
     public void setDate(LocalDate date) {
         this.date = date;
-    }
-
-
+    } 
+    
 }
